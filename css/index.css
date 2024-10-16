@@ -1,6 +1,6 @@
 /* Footer Styling */
 footer {
-    background-color: #2f2f2f; /* Matches bg-4 */
+    background-color: #2f2f2f; /* Dark background for footer */
     padding: 20px 0;
     position: fixed;
     bottom: 0;
@@ -14,8 +14,7 @@ footer {
 }
 
 .text-underline {
-    text-decoration: underline; /* Underline 'Contact Me' */
-    margin-right: 10px; /* Add space between 'Contact Me' and the links */
+    margin-right: 15px; /* Space between 'Contact Me' and the links */
 }
 
 .navbar-footer ul {
@@ -24,13 +23,13 @@ footer {
     padding-left: 0;
 }
 
-.navbar-footer ul li {
-    margin-left: 20px; /* Add space between links */
+.navbar-footer ul {
+    margin-left: 20px; /* Space between links */
 }
 
 .navbar-footer a {
-    color: #fff; /* Ensure the link color matches the footer */
-    font-size: 16px; /* Adjust font size */
+    color: #fff; /* Link color */
+    font-size: 16px; /* Font size */
 }
 
 .navbar-footer a:hover {
@@ -38,8 +37,13 @@ footer {
 }
 
 .social-icon {
-    width: 20px;  /* Adjust icon size */
+    width: 20px; /* Icon size */
     height: 20px; /* Maintain aspect ratio */
     margin-right: 5px; /* Space between icon and text */
     vertical-align: middle; /* Align icon with text */
+}
+
+p {
+    font-size: 20;
+    margin:  0 0 0 0;
 }
