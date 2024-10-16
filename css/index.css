@@ -1,39 +1,45 @@
-body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
+/* Footer Styling */
+footer {
+    background-color: #2f2f2f; /* Matches bg-4 */
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-footer {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.text-underline {
+    text-decoration: underline; /* Underline 'Contact Me' */
+    margin-right: 10px; /* Add space between 'Contact Me' and the links */
+}
+
+.navbar-footer ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navbar-footer ul li {
+    margin-left: 20px; /* Add space between links */
+}
+
+.navbar-footer a {
+    color: #fff; /* Ensure the link color matches the footer */
+    font-size: 16px; /* Adjust font size */
+}
+
+.navbar-footer a:hover {
+    color: #1abc9c; /* Change color on hover */
+}
+
+.social-icon {
+    width: 20px;  /* Adjust icon size */
+    height: 20px; /* Maintain aspect ratio */
+    margin-right: 5px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
