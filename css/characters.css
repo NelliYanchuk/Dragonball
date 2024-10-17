@@ -1,0 +1,111 @@
+body {
+    font-family: cursive;
+    background-color: rgb(241, 249, 246);
+}
+
+footer {
+    padding: 0 0;
+    margin-top: 40px;
+}
+
+.navbar-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-footer ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+.navbar-footer a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.navbar-footer a:hover {
+    color: #1abc9c;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle; /* Align icon with text */
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header {
+    margin-top: 50px; /* for navbar height */
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+  #characterSection {
+    display: flex;
+    flex-wrap: wrap; /* Flexbox with wrapping */
+    justify-content: space-between; /* Add space between items */
+  }
+  
+  .item-flex {
+    display: flex;
+    flex-direction: row; /* Horizontal layout for image and text */
+    align-items: flex-start; /* Align items at the start */
+    width: 32%; /* Ensure there are up to 3 items per row */
+    margin-bottom: 20px; /* Space between rows */
+    border: 1px solid #ccc; /* Optional border */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .item-flex img {
+    max-width: 150px;
+    height: auto; /* Keep aspect ratio */
+    margin-right: 10px;
+  }
+  
+  .item-info {
+    flex-grow: 1;
+  }
+  
+  .item-name {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .item-description {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .item-flex {
+      width: 48%; /* 2 items per row on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .item-flex {
+      width: 100%; /* Full width for single item per row on extra small screens */
+    }
+  }
+  

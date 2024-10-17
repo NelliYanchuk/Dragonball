@@ -1,4 +1,3 @@
-const requestPlanetURL = 'https://dragonball-api.com/api/planets';
 const requestCharacterURL = 'https://dragonball-api.com/api/characters';
 
 // General function to fetch paginated data from any URL
@@ -10,31 +9,37 @@ async function fetchAll(apiURL, section) {
     while (true) {
       const response = await fetch(`${apiURL}?page=${currentPage}`);
       const data = await response.json();
-      dataArray = dataArray.concat(data.items);
       
-      if (!data.links.next) break; // Exit loop if no next page
+      // Concatenate new data to the array
+      dataArray = dataArray.concat(data.items);
+
+      // If there's no 'next' link, exit the loop
+      if (!data.links.next) break;
       currentPage++;
     }
 
-    // Display items in the corresponding section
+    // Append each item to the given section
     dataArray.forEach(item => {
       section.innerHTML += `
-        <div class="item">
-          <img src="${item.image}" alt="${item.name}">
-          <h2>${item.name}</h2>
-          <p>${item.description}</p>
+        <div class="item-flex">
+          <img src="${item.image}" alt="${item.name}" class="item-img">
+          <div class="item-info">
+            <h2 class="item-name">${item.name}</h2>
+            <p class="item-description">${item.description || 'No description available.'}</p>
+          </div>
         </div>
       `;
     });
+    
+    
   } catch (error) {
     console.error(`Error fetching data from ${apiURL}:`, error);
   }
 }
 
-// DOM elements for the planet and character sections
-const planetSection = document.getElementById('planetSection');
+// DOM elements for character sections
 const characterSection = document.getElementById('characterSection');
 
-// Fetch and display planets and characters
-fetchAll(requestPlanetURL, planetSection);
+// Fetch and display characters
 fetchAll(requestCharacterURL, characterSection);
+
