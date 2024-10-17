@@ -140,3 +140,10 @@ p {
 .my-column {
     margin: 0 15px;
 }
+
+.flash img {
+    display: flex;
+    width: 150px;
+    height: 350px;
+    margin-top: 50px;
+}
