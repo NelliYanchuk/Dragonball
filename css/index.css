@@ -1,4 +1,7 @@
-/* Footer Styling */
+body {
+    font-family: cursive;;
+}
+
 footer {
     background-color: #2f2f2f; /* Dark background for footer */
     padding: 20px 0;
@@ -21,9 +24,6 @@ footer {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-}
-
-.navbar-footer ul {
     margin-left: 20px; /* Space between links */
 }
 
@@ -42,8 +42,25 @@ footer {
     margin-right: 5px; /* Space between icon and text */
     vertical-align: middle; /* Align icon with text */
 }
+.navbar {
+    margin-bottom: 0;
+}
 
 p {
     font-size: 20;
     margin:  0 0 0 0;
+}
+
+.page-name {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: #1abc9c;
+    height: 50px;
+    width: 100%; 
+}
+
+.page-name p {
+    font-size: 20;
+    font-family: cursive;
 }
