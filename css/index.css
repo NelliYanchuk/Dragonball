@@ -1,13 +1,15 @@
 body {
-    font-family: cursive;;
+    font-family: cursive;
+    background-color: rgb(241, 249, 246);
+}
+
+main-content {
+    max-height: 20%;
 }
 
 footer {
-    background-color: #2f2f2f; /* Dark background for footer */
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 0 0;
+    margin-top: 40px;
 }
 
 .navbar-footer {
@@ -42,14 +44,30 @@ footer {
     margin-right: 5px; /* Space between icon and text */
     vertical-align: middle; /* Align icon with text */
 }
+
 .navbar {
     margin-bottom: 0;
 }
+
+#navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays on top */
+    }
+
+#header {
+        margin-top: 50px; /* Adjust this value based on the height of your navbar */
+        text-align: center;
+    }
 
 p {
     font-size: 20;
     margin:  0 0 0 0;
 }
+
+
+
 
 .page-name {
     display: flex;
@@ -64,3 +82,26 @@ p {
     font-size: 20;
     font-family: cursive;
 }
+
+.col-sm-6 {
+    display: flex;                /* Use flexbox to center contents */
+    flex-direction: column;       /* Align items vertically */
+    align-items: center;          /* Center items horizontally */
+}
+
+.main-img {
+    width: 250px;                /* Set your desired width */
+    height: 300px;               /* Set your desired height */
+    border: 2px solid gray;      /* Add a gray border */
+    border-radius: 8px;          /* Optional: add rounded corners */
+    margin: 10px 0;              /* Add some space above and below the image */
+}
+
+.col-sm-6 p {
+    width: 60%;
+    height: 100px;
+    /* display: flex;                Use flexbox to center contents */
+    /* flex-direction: column;       /* Align items vertically */
+    /* align-items: center;          /* Center items horizontally */
+}
+
