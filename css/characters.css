@@ -56,6 +56,10 @@ footer {
     margin-bottom: 0;
 }
 
+.navbar-brand {
+    margin: 0;
+}
+
 #navigation {
     position: fixed;
     top: 0;
@@ -98,7 +102,11 @@ footer {
     max-height: 300px;
     margin-right: 10px; /* Відстань між картинкою та текстом */
   }
-  
+
+  .item-img:hover {
+    transform: scale(1.1); /* Scale image up to 110% of its size */
+    z-index: 10; /* Bring the image to the front */
+}
   .item-info {
     flex-grow: 1;
   }
@@ -124,4 +132,13 @@ footer {
       width: 100%; /* Один елемент на ряд для дуже малих екранів */
     }
   }
+
+  .read-more {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
   
