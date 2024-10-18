@@ -8,6 +8,10 @@ footer {
     margin-top: 40px;
 }
 
+main {
+  padding-bottom: 80px; /* for footer height */
+}
+
 .page-name {
     display: flex;
     justify-content: center;
@@ -49,7 +53,7 @@ footer {
     width: 20px;
     height: 20px;
     margin-right: 5px;
-    vertical-align: middle; /* Align icon with text */
+    vertical-align: middle;
 }
 
 .navbar {
@@ -82,16 +86,16 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 20px; /* Відступи зліва і справа */
-    gap: 10px; /* Відстань між елементами */
+    padding: 0 20px; 
+    gap: 10px;
   }
   
   .item-flex {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 32%; /* Три елементи в ряд */
-    margin-bottom: 10px; /* Зменшення відстані між рядами */
+    width: 32%; 
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
@@ -103,12 +107,12 @@ footer {
   .item-flex img {
     max-width: 150px;
     max-height: 300px;
-    margin-right: 10px; /* Відстань між картинкою та текстом */
+    margin-right: 10px; 
   }
 
   .item-img:hover {
-    transform: scale(1.1); /* Scale image up to 110% of its size */
-    z-index: 10; /* Bring the image to the front */
+    transform: scale(1.1); /* scale image up to 110% of its size */
+    z-index: 10; /* bring the image to the front */
 }
   .item-info {
     flex-grow: 1;
@@ -116,7 +120,7 @@ footer {
   
   .item-name {
     font-size: 20px;
-    margin: 8px 0 8px; /* Зменшений відступ під назвою */
+    margin: 8px 0 8px; 
   }
   
   .item-description {
@@ -126,13 +130,13 @@ footer {
   
   @media screen and (max-width: 768px) {
     .item-flex {
-      width: 48%; /* Два елементи на ряд на менших екранах */
+      width: 48%; 
     }
   }
   
   @media screen and (max-width: 576px) {
     .item-flex {
-      width: 100%; /* Один елемент на ряд для дуже малих екранів */
+      width: 100%; 
     }
   }
 
@@ -143,7 +147,3 @@ footer {
     display: inline-block;
     margin-top: 5px;
   }
-  
-main {
-    padding-bottom: 80px; /* Adjust this value based on footer height */
-}
