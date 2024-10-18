@@ -3,47 +3,17 @@ body {
     background-color: rgb(241, 249, 246);
 }
 
-main-content {
-    max-height: 20%;
-}
-
 footer {
     padding: 0 0;
     margin-top: 40px;
 }
 
-.navbar-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+p {
+    font-size: 20;
+    margin: 0 0 0 0;
 }
 
-.navbar-footer ul {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 20px;
-}
-
-.navbar-footer a {
-    color: #fff;
-    font-size: 16px;
-}
-
-.navbar-footer a:hover {
-    color: #1abc9c;
-}
-
-.social-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    vertical-align: middle; /* Align icon with text */
-}
-
-.navbar {
-    margin-bottom: 0;
-}
+ /* IDs*/
 
 #navigation {
     position: fixed;
@@ -70,16 +40,29 @@ footer {
     width: 100%;
 }
 
-p {
-    font-size: 20;
-    margin: 0 0 0 0;
-}
-
 #main-text {
     font-size: 28px;
     margin-top: 30px;
     margin-bottom: 20px;
     color: rgb(67, 74, 80);
+}
+
+ /* Classes */
+
+.navbar-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.navbar {
+    margin-bottom: 0;
 }
 
 .item-text {
@@ -101,11 +84,6 @@ p {
     width: 100%;
 }
 
-.page-name p {
-    font-size: 20;
-    font-family: cursive;
-}
-
 .col-sm-4 {
     display: flex;
     flex-direction: column;
@@ -119,12 +97,12 @@ p {
     border: 2px solid gray;
     border-radius: 8px;
     margin: 5px 0;
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; /* for smooth transformation */
 }
 
 .main-img:hover {
-    transform: scale(1.1); /* Scale image up to 110% of its size */
-    z-index: 10; /* Bring the image to the front */
+    transform: scale(1.1); /* scale image up to 110% of its size */
+    z-index: 10; /* bring the image to the front */
 }
 
 .my-custom-row {
