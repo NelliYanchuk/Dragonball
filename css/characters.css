@@ -15,7 +15,7 @@ footer {
     background-color: #1abc9c;
     height: 50px;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .page-name p {
@@ -95,6 +95,9 @@ footer {
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
+    border-color: #1abc9c;
+    border-radius: 15px;
+    border-width: 8px;
   }
   
   .item-flex img {
@@ -113,7 +116,7 @@ footer {
   
   .item-name {
     font-size: 20px;
-    margin: 0 0 5px; /* Зменшений відступ під назвою */
+    margin: 8px 0 8px; /* Зменшений відступ під назвою */
   }
   
   .item-description {
@@ -141,4 +144,6 @@ footer {
     margin-top: 5px;
   }
   
-  
+main {
+    padding-bottom: 80px; /* Adjust this value based on footer height */
+}
