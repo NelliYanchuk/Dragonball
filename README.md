@@ -67,3 +67,10 @@ Feel free to contact me via:
 
 - **GitHub**: [Nelli Yanchuk](https://github.com/NelliYanchuk)
 - **LinkedIn**: [Nelli Yanchuk](https://www.linkedin.com/in/nelli-yanchuk-a24b81138/)
+
+![Home Page](https://i.ibb.co/nCWygp0/start-page.jpg)
+
+![Characters](https://i.ibb.co/8NqLrCS/characters.jpg)
+
+![Planets](https://i.ibb.co/kH2nBMp/planets.jpg)
+
