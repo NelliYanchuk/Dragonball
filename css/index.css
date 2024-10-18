@@ -127,11 +127,6 @@ p {
     z-index: 10; /* Bring the image to the front */
 }
 
-.col-sm-6 p {
-    width: 60%;
-    height: 50px;
-}
-
 .my-custom-row {
     display: flex;
     justify-content: center;
@@ -139,4 +134,11 @@ p {
 
 .my-column {
     margin: 0 15px;
+}
+
+.flash img {
+    display: flex;
+    width: 150px;
+    height: 350px;
+    margin-top: 50px;
 }

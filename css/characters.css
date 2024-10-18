@@ -1,0 +1,149 @@
+body {
+    font-family: cursive;
+    background-color: rgb(241, 249, 246);
+}
+
+footer {
+    padding: 0 0;
+    margin-top: 40px;
+}
+
+.page-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1abc9c;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.page-name p {
+    font-size: 20;
+    font-family: cursive;
+}
+
+.navbar-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-footer ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+.navbar-footer a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.navbar-footer a:hover {
+    color: #1abc9c;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle; /* Align icon with text */
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header {
+    margin-top: 50px; /* for navbar height */
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#characterSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px; /* Відступи зліва і справа */
+    gap: 10px; /* Відстань між елементами */
+  }
+  
+  .item-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 32%; /* Три елементи в ряд */
+    margin-bottom: 10px; /* Зменшення відстані між рядами */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: #1abc9c;
+    border-radius: 15px;
+    border-width: 8px;
+  }
+  
+  .item-flex img {
+    max-width: 150px;
+    max-height: 300px;
+    margin-right: 10px; /* Відстань між картинкою та текстом */
+  }
+
+  .item-img:hover {
+    transform: scale(1.1); /* Scale image up to 110% of its size */
+    z-index: 10; /* Bring the image to the front */
+}
+  .item-info {
+    flex-grow: 1;
+  }
+  
+  .item-name {
+    font-size: 20px;
+    margin: 8px 0 8px; /* Зменшений відступ під назвою */
+  }
+  
+  .item-description {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .item-flex {
+      width: 48%; /* Два елементи на ряд на менших екранах */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .item-flex {
+      width: 100%; /* Один елемент на ряд для дуже малих екранів */
+    }
+  }
+
+  .read-more {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+main {
+    padding-bottom: 80px; /* Adjust this value based on footer height */
+}

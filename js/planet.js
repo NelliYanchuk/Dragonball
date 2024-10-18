@@ -10,19 +10,22 @@ async function fetchAll(apiURL, section) {
     while (true) {
       const response = await fetch(`${apiURL}?page=${currentPage}`);
       const data = await response.json();
-      dataArray = dataArray.concat(data.items);
       
-      if (!data.links.next) break; // Exit loop if no next page
+      // Concatenate new data to the array
+      dataArray = dataArray.concat(data.items);
+
+      // If there's no 'next' link, exit the loop
+      if (!data.links.next) break;
       currentPage++;
     }
 
-    // Display items in the corresponding section
+    // Append each item to the given section
     dataArray.forEach(item => {
       section.innerHTML += `
         <div class="item">
-          <img src="${item.image}" alt="${item.name}">
+          <img src="${item.image}" alt="${item.name}" class="item-img">
           <h2>${item.name}</h2>
-          <p>${item.description}</p>
+          <p>${item.description || 'No description available.'}</p>
         </div>
       `;
     });
@@ -38,3 +41,4 @@ const characterSection = document.getElementById('characterSection');
 // Fetch and display planets and characters
 fetchAll(requestPlanetURL, planetSection);
 fetchAll(requestCharacterURL, characterSection);
+
