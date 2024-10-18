@@ -9,11 +9,7 @@ async function fetchAll (apiURL, section) {
     while (true) {
       const response = await fetch(`${apiURL}?page=${currentPage}`)
       const data = await response.json()
-
-      // Concatenate new data to the array
       dataArray = dataArray.concat(data.items)
-
-      // If there's no 'next' link, exit the loop
       if (!data.links.next) break
       currentPage++
     }
@@ -48,21 +44,17 @@ async function fetchAll (apiURL, section) {
 function toggleDescription (event, fullDescription) {
   const target = event.target
   const itemInfoDiv = target.parentElement
-
-  // Перевірка наявності опису
   const descriptionParagraph = itemInfoDiv.querySelector('.full-description')
 
   if (descriptionParagraph) {
-    // Якщо опис уже розширено, сховати його
     descriptionParagraph.remove()
     target.innerHTML = '[more]'
   } else {
-    // Якщо опис не розгорнуто, показати повний текст
     const descriptionParagraph = document.createElement('p')
-    descriptionParagraph.className = 'full-description' // Додати клас для стилізації
-    descriptionParagraph.innerHTML = fullDescription // Встановити повний текст опису
+    descriptionParagraph.className = 'full-description'
+    descriptionParagraph.innerHTML = fullDescription
 
-    itemInfoDiv.insertBefore(descriptionParagraph, target) // Вставити перед "Читати далі"
+    itemInfoDiv.insertBefore(descriptionParagraph, target)
     target.innerHTML = '[less]'
   }
 }
@@ -70,5 +62,4 @@ function toggleDescription (event, fullDescription) {
 // DOM elements for character sections
 const characterSection = document.getElementById('characterSection')
 
-// Fetch and display characters
 fetchAll(requestCharacterURL, characterSection)
