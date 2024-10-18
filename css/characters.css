@@ -8,6 +8,21 @@ footer {
     margin-top: 40px;
 }
 
+.page-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1abc9c;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.page-name p {
+    font-size: 20;
+    font-family: cursive;
+}
+
 .navbar-footer {
     display: flex;
     justify-content: center;
@@ -59,28 +74,29 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-  #characterSection {
+#characterSection {
     display: flex;
-    flex-wrap: wrap; /* Flexbox with wrapping */
-    justify-content: space-between; /* Add space between items */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px; /* Відступи зліва і справа */
+    gap: 10px; /* Відстань між елементами */
   }
   
   .item-flex {
     display: flex;
-    flex-direction: row; /* Horizontal layout for image and text */
-    align-items: flex-start; /* Align items at the start */
-    width: 32%; /* Ensure there are up to 3 items per row */
-    margin-bottom: 20px; /* Space between rows */
-    border: 1px solid #ccc; /* Optional border */
+    flex-direction: row;
+    align-items: flex-start;
+    width: 32%; /* Три елементи в ряд */
+    margin-bottom: 10px; /* Зменшення відстані між рядами */
+    border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
   }
   
   .item-flex img {
     max-width: 150px;
-    height: auto; /* Keep aspect ratio */
-    margin-right: 10px;
+    max-height: 300px;
+    margin-right: 10px; /* Відстань між картинкою та текстом */
   }
   
   .item-info {
@@ -89,7 +105,7 @@ footer {
   
   .item-name {
     font-size: 20px;
-    margin: 0 0 10px;
+    margin: 0 0 5px; /* Зменшений відступ під назвою */
   }
   
   .item-description {
@@ -99,13 +115,13 @@ footer {
   
   @media screen and (max-width: 768px) {
     .item-flex {
-      width: 48%; /* 2 items per row on smaller screens */
+      width: 48%; /* Два елементи на ряд на менших екранах */
     }
   }
   
   @media screen and (max-width: 576px) {
     .item-flex {
-      width: 100%; /* Full width for single item per row on extra small screens */
+      width: 100%; /* Один елемент на ряд для дуже малих екранів */
     }
   }
   
