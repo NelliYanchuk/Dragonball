@@ -13,7 +13,7 @@ p {
     margin: 0 0 0 0;
 }
 
- /* IDs*/
+/* IDs*/
 
 #navigation {
     position: fixed;
@@ -23,14 +23,16 @@ p {
 }
 
 #header {
-    margin-top: 50px; /* for navbar height */
+    margin-top: 50px;
+    /* for navbar height */
     padding-bottom: 5px;
     text-align: center;
 }
 
 #main {
     position: fixed;
-    padding-bottom: 70px; /* for footer height */
+    padding-bottom: 70px;
+    /* for footer height */
     width: 100%;
 }
 
@@ -47,7 +49,7 @@ p {
     color: rgb(67, 74, 80);
 }
 
- /* Classes */
+/* Classes */
 
 .navbar-footer {
     display: flex;
@@ -97,12 +99,15 @@ p {
     border: 2px solid gray;
     border-radius: 8px;
     margin: 5px 0;
-    transition: transform 0.3s ease; /* for smooth transformation */
+    transition: transform 0.3s ease;
+    /* for smooth transformation */
 }
 
 .main-img:hover {
-    transform: scale(1.1); /* scale image up to 110% of its size */
-    z-index: 10; /* bring the image to the front */
+    transform: scale(1.1);
+    /* scale image up to 110% of its size */
+    z-index: 10;
+    /* bring the image to the front */
 }
 
 .my-custom-row {
